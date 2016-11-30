@@ -1,0 +1,7 @@
+.slider .indicators .indicator-item {
+    background-color: transparentize(color('blue-grey', 'base'), .5);
+
+    &.active {
+        background-color: color('blue-grey', 'base');
+    }
+}

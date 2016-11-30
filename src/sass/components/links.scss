@@ -1,0 +1,24 @@
+a {
+    color: $white;
+    border-bottom: 2px solid transparentize($white, .5);
+
+    &:hover {
+        border-bottom-color: $white;
+    }
+
+    img {
+        vertical-align: top;
+        border: 0;
+    }
+}
+
+.dark {
+    a {
+        color: $black;
+        border-bottom-color: transparentize($black, .5);
+
+        &:hover {
+            border-bottom-color: $black;
+        }
+    }
+}

@@ -1,0 +1,3 @@
+table.highlight>tbody>tr:hover {
+    background-color: transparentize(color('grey', 'base'), .75);
+}

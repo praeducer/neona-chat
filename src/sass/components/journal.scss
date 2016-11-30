@@ -1,0 +1,31 @@
+.journal-entries {
+    .journal-entry {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        margin-left: 0;
+        border-bottom: 1px solid $white;
+
+        .col:first-of-type {
+            padding-right: 1.5rem;
+            padding-left: 0;
+        }
+
+        @media #{$medium-and-down} {
+            .col {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+}
+
+.dark {
+    .journal-entries .journal-entry {
+        border-bottom-color: $black;
+    }
+}

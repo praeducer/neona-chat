@@ -1,0 +1,33 @@
+@mixin social-link($network, $color) {
+    &.#{$network} {
+        color: $color;
+        border-bottom-color: transparentize($color, .5);
+
+        &:hover {
+            border-bottom-color: $color;
+        }
+    }
+}
+
+.social {
+    a {
+        @include social-link(facebook, $facebook);
+        @include social-link(twitter, $twitter);
+        @include social-link(dribbble, $dribbble);
+        @include social-link(github, $github);
+        @include social-link(vk, $vk);
+        @include social-link(linkedin, $linkedin);
+        @include social-link(googleplus, $googleplus);
+        @include social-link(pinterest, $pinterest);
+
+        display: inline-block;
+
+        @media #{$small-and-down} {
+            margin-bottom: 5px;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 1rem;
+        }
+    }
+}

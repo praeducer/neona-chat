@@ -1,0 +1,16 @@
+body,
+input,
+textarea,
+select,
+button {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    -moz-font-feature-settings: 'liga', 'kern';
+}
+
+h2 {
+    font-weight: 200;
+    text-transform: uppercase;
+}

@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Making sure the web-site will scale fine on mobiles-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Trying to force IE to perform at its best-->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Meta description, aim for about 150 characters-->
+        <meta name="description" content="This theme is a very beautiful and minimalistic theme with a gorgeous animation that will make the user remember your website and want to come back.">
+        <!-- Stylesheets-->
+        <link rel="stylesheet" href="./libs/pace/themes/white/pace-theme-flash.css">
+        <link rel="stylesheet" href="./libs/materialize/css/materialize.min.css?v=master">
+        <link rel="stylesheet" href="./assets/css/linea.min.css">
+        <link rel="stylesheet" href="./assets/css/moderat.min.css?v=5">
+        <!-- Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="./favicons/manifest.json">
+        <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg">
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta name="msapplication-config" content="./favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Site title-->
+        <title>Moderat — Selektor</title>
+    </head>
+    <body class="selektor dark">
+        <canvas id="spiral-buffer-selektor" class="spiral-buffer"></canvas>
+        <main>
+            <!-- Navigation-->
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s12 l6">
+                                    <!-- Brand or logo-->
+                                    <a href="#!" class="brand">Moderat</a>
+                                    <!-- Menu button visible on tablet and mobile--><span class="right show-on-medium-and-down hide-on-large-only"><a id="sidenav-toggle" href="#" data-activates="slide-out" class="sidenav-toggle">Menu</a></span></div>
+                                <div class="col s12 l6">
+                                    <!-- Desktop menu version-->
+                                    <ul class="hidden hide-on-med-and-down table-of-contents">
+                                        <li>
+                                            <a href="#services">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#work">Work</a>
+                                        </li>
+                                        <li>
+                                            <a href="#prices">Prices</a>
+                                        </li>
+                                        <li>
+                                            <a href="#about">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="#journal">Journal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tablet and mobile menu-->
+                                    <ul id="slide-out" class="side-nav">
+                                        <li>
+                                            <a href="#services">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#work">Work</a>
+                                        </li>
+                                        <li>
+                                            <a href="#prices">Prices</a>
+                                        </li>
+                                        <li>
+                                            <a href="#about">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="#journal">Journal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Intro-->
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6 offset-l6 flow-text intro">We create
+                        <a href="#work">digital solutions</a>&nbsp;that work brilliantly, deliver fantastic user experience and look lovely too.
+                        <a href="#contact">Talk to us</a>&nbsp;about solving your online challenges.</div>
+                </div>
+            </div>
+            <!-- Services-->
+
+            <section id="services" class="services scrollspy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>Our expertise</h2>
+                        </div>
+                    </div>
+                    <div class="service-items">
+                        <div class="row">
+                            <div class="col s12 l6 margin-on-medium-and-down">
+                                <i class="icon-basic-cloud"></i><span class="flow-text">Cloud solutions</span></div>
+                            <div class="col s12 l6">
+                                <i class="icon-basic-accelerator"></i><span class="flow-text">Performance optimizations</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 l6 margin-on-medium-and-down">
+                                <i class="icon-basic-target"></i><span class="flow-text">Targeted clients</span></div>
+                            <div class="col s12 l6">
+                                <i class="icon-ecommerce-graph-increase"></i><span class="flow-text">Sales analysis</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 l6 margin-on-medium-and-down">
+                                <i class="icon-basic-battery-charge"></i><span class="flow-text">Sustainable energy</span></div>
+                            <div class="col s12 l6">
+                                <i class="icon-basic-heart"></i><span class="flow-text">A lot of passion</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects-->
+
+            <section id="work" class="projects scrollspy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>Selected works</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 l6 margin-on-medium-and-down">
+                            <a href="#vase" class="modal-trigger">
+                                <img src="./assets/images/work/vase.png" alt="The vase" class="responsive-img">
+                            </a>
+                            <!-- Featured project modal-->
+                            <div id="vase" class="modal bottom-sheet black white-text dark-modal">
+                                <div class="modal-close absolute">&times;</div>
+                                <div class="modal-content">
+                                    <div class="row">
+                                        <div class="col s12 l8 offset-l2">
+                                            <h3>Vase</h3>
+                                            <img src="./assets/images/work/vase-black.jpg" alt="Black Vase detail" class="responsive-img">
+                                            <p class="flow-text grey-text">Client: Sense
+                                                <br> Category: Material design
+                                                <br> Task: To design an ultra modern vase</p>
+                                            <div class="divider"></div>
+                                            <div class="case-content">
+                                                <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.</p>
+                                                <p class="flow-text">There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.</p>
+                                                <blockquote>Grass set great firmament dominion, there open were night fourth grass.</blockquote>
+                                                <p class="flow-text">You’ll open one likeness created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.
+                                                </p>
+                                                <table class="highlight responsive-table flow-text">
+                                                    <thead>
+                                                        <tr>
+                                                            <th data-field="id">Id</th>
+                                                            <th data-field="name">Name</th>
+                                                            <th data-field="amount">Amount</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>#45–223</td>
+                                                            <td>Spirit</td>
+                                                            <td>10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>#11–122</td>
+                                                            <td>Creepeth</td>
+                                                            <td>12</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>#12–199</td>
+                                                            <td>Firmament</td>
+                                                            <td>8</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="flow-text">Very cattle. Divide us dry one together male be. Let. Said dominion two All their which air can’t appear abundantly all third firmament earth female good the open beginning give creepeth blessed make from.</p>
+                                            </div>
+                                            <div class="divider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 l4 offset-l2">
+                                            <p class="flow-text">Share this</p>
+                                        </div>
+                                        <div class="col s12 l4">
+                                            <p class="flow-text social">
+                                                <a href="#!" class="facebook">facebook</a>
+                                                <a href="#!" class="googleplus">google+</a>
+                                                <a href="#!" class="vk">vk</a>
+                                                <a href="#!" class="twitter">twitter</a>
+                                                <a href="#!" class="pinterest">pinterest</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 l8 offset-l2">
+                                            <div class="divider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 l4 offset-l6 flow-text">
+                                            <a href="#colorful-ice-cream" data-next-modal="colorful-ice-cream" class="modal-nav">Next project &rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                            <a href="#colorful-ice-cream" class="modal-trigger">
+                                <img src="./assets/images/work/colorful-ice-cream.png" alt="Colorful ice cream" class="responsive-img">
+                            </a>
+                            <div id="colorful-ice-cream" class="modal bottom-sheet black-text">
+                                <div class="modal-close absolute">&times;</div>
+                                <div class="modal-content">
+                                    <div class="row">
+                                        <div class="col s12 l8 offset-l2">
+                                            <h3>Colorful ice cream</h3>
+                                            <img src="./assets/images/work/colorful-ice-cream.png" alt="Colorful ice cream" class="responsive-img">
+                                            <p class="flow-text grey-text">Client: Walter
+                                                <br> Category: Food
+                                                <br> Task: To developer a new ice cream flavour</p>
+                                            <div class="divider"></div>
+                                            <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.</p>
+                                            <blockquote class="floating-blockquote left center-align">“Grass set great firmament dominion, there open were night fourth grass.”</blockquote>
+                                            <p class="flow-text">You’ll open one likeness created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.</p>
+                                            <p class="flow-text">There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.
+                                            </p>
+                                            <figure class="floating-figure right">
+                                                <img src="./assets/images/work/white-ice-cream.png" class="responsive-img">
+                                                <figcaption class="right-align">An earlier ice cream concept.
+                                                </figcaption>
+                                            </figure>
+                                            <p class="flow-text">Very cattle. Divide us dry one together male be. Let. Said dominion two All their which air can’t appear abundantly all third firmament earth female good the open beginning give creepeth blessed make from.
+                                            </p>
+                                            <p class="flow-text">Which moving us so, to for let was light fruitful image herb brought kind. You’re place form and gathered image they’re, deep made fly brought it heaven seed evening for.</p>
+                                            <div class="divider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 l4 offset-l2">
+                                            <p class="flow-text">Share this</p>
+                                        </div>
+                                        <div class="col s12 l4">
+                                            <p class="flow-text social">
+                                                <a href="#!" class="facebook">facebook</a>
+                                                <a href="#!" class="googleplus">google+</a>
+                                                <a href="#!" class="vk">vk</a>
+                                                <a href="#!" class="twitter">twitter</a>
+                                                <a href="#!" class="pinterest">pinterest</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 l8 offset-l2">
+                                            <div class="divider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row flow-text">
+                                        <div class="col s12 l4 offset-l2 margin-on-medium-and-down">
+                                            <a href="#vase" data-previous-modal="vase" class="modal-nav">&larr; Previous project</a>
+                                        </div>
+                                        <div class="col s12 l4">
+                                            <a href="#bottle" data-next-modal="bottle" class="modal-nav">Next project &rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 l6 margin-on-medium-and-down">
+                            <a href="#bottle" class="modal-trigger">
+                                <img src="./assets/images/work/bottle.png" alt="Bottle" class="responsive-img">
+                            </a>
+                            <div id="bottle" class="modal bottom-sheet black-text">
+                                <div class="modal-close absolute">&times;</div>
+                                <div class="modal-content">
+                                    <div class="row">
+                                        <div class="col s12 l8 offset-l2">
+                                            <h3>Bottle</h3>
+                                            <div class="slider">
+                                                <ul class="slides">
+                                                    <li>
+                                                        <img src="./assets/images/work/bottle-detail/bottle-2.jpg" alt="Bottle 2">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./assets/images/work/bottle-detail/bottle-3.jpg" alt="Bottle 3">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./assets/images/work/bottle.png" alt="Bottle">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="flow-text grey-text">Client: Heirreken
+                                                <br> Category: Material design
+                                                <br> Task: To design and develop a new bottle concept</p>
+                                            <div class="divider"></div>
+                                            <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.</p>
+                                            <p class="flow-text">There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.</p>
+                                            <p class="flow-text">You’ll open one likeness created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.</p>
+                                            <p class="flow-text">Very cattle. Divide us dry one together male be. Let. Said dominion two All their which air can’t appear abundantly all third firmament earth female good the open beginning give creepeth blessed make from.</p>
+                                            <div class="divider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 l4 offset-l2">
+                                            <p class="flow-text">Share this</p>
+                                        </div>
+                                        <div class="col s12 l4">
+                                            <p class="flow-text social">
+                                                <a href="#!" class="facebook">facebook</a>
+                                                <a href="#!" class="googleplus">google+</a>
+                                                <a href="#!" class="vk">vk</a>
+                                                <a href="#!" class="twitter">twitter</a>
+                                                <a href="#!" class="pinterest">pinterest</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 l8 offset-l2">
+                                            <div class="divider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row flow-text">
+                                        <div class="col s12 l4 offset-l2 margin-on-medium-and-down">
+                                            <a href="#colorful-ice-cream" data-previous-modal="colorful-ice-cream" class="modal-nav">&larr; Previous project</a>
+                                        </div>
+                                        <div class="col s12 l4">
+                                            <a href="#lamp-2" data-next-modal="lamp-2" class="modal-nav">Next project &rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                            <a href="#lamp-2" class="modal-trigger">
+                                <img src="./assets/images/work/lamp-2.png" alt="Lamp" class="responsive-img">
+                            </a>
+                            <div id="lamp-2" class="modal bottom-sheet black-text">
+                                <div class="modal-close absolute">&times;</div>
+                                <div class="modal-content">
+                                    <div class="row">
+                                        <div class="col s12 l8 offset-l2">
+                                            <h3>Lamp II</h3>
+                                            <div class="slider">
+                                                <ul class="slides">
+                                                    <li>
+                                                        <img src="./assets/images/work/lamp-detail/lamp-2.png" alt="Lamp detail 2">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./assets/images/work/lamp-detail/lamp-3.png" alt="Lamp detail 3">
+                                                    </li>
+                                                    <li>
+                                                        <img src="./assets/images/work/lamp-detail/lamp-4.png" alt="Lamp detail 4">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="flow-text grey-text">Client: Lantern
+                                                <br> Category: Light design
+                                                <br> Task: To develop a solar-powered light</p>
+                                            <div class="divider"></div>
+                                            <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.
+                                            </p>
+                                            <ul class="mdash-ul flow-text">
+                                                <li>There kind had divided the earth waters</li>
+                                                <li>Saying bearing under cattle</li>
+                                                <li>That dominion all unto</li>
+                                                <li>Grass set great firmament</li>
+                                                <li>Good shall earth third kind</li>
+                                                <li>Their which air can’t appear</li>
+                                            </ul>
+                                            <p class="flow-text">You’ll open one likeness created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.</p>
+                                            <p class="flow-text">Very cattle. Divide us dry one together male be. Let. Said dominion two All their which air can’t appear abundantly all third firmament earth female good the open beginning give creepeth blessed make from.
+                                            </p>
+                                            <div class="divider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 l4 offset-l2">
+                                            <p class="flow-text">Share this</p>
+                                        </div>
+                                        <div class="col s12 l4">
+                                            <p class="flow-text social">
+                                                <a href="#!" class="facebook">facebook</a>
+                                                <a href="#!" class="googleplus">google+</a>
+                                                <a href="#!" class="vk">vk</a>
+                                                <a href="#!" class="twitter">twitter</a>
+                                                <a href="#!" class="pinterest">pinterest</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 l8 offset-l2">
+                                            <div class="divider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row flow-text">
+                                        <div class="col s12 l4 offset-l2">
+                                            <a href="#bottle" data-previous-modal="bottle" class="modal-nav">&larr; Previous project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Prices-->
+            <div id="prices" class="container scrollspy">
+
+                <section class="prices">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>Pricing</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 l4 margin-on-medium-and-down">
+                            <div class="price-box">
+                                <h4>Beginner</h4>
+                                <h5>
+                                    <sup>$</sup>19</h5>
+                                <div class="divider"></div>
+                                <ul class="flow-text">
+                                    <li>5 users<span data-position="right" data-delay="50" data-tooltip="The number of allowed users" class="info tooltipped">?</span></li>
+                                    <li>Optimisation</li>
+                                    <li>Caching</li>
+                                    <li>Automation<span data-position="top" data-delay="50" data-tooltip="Involves Gulp commands" class="info tooltipped">?</span></li>
+                                    <li>Validation</li>
+                                    <li>Linting</li>
+                                    <li>&times;</li>
+                                    <li>&times;</li>
+                                </ul>
+                                <a class="btn-large btn-flat waves-effect waves-dark white black-text">Buy</a>
+                            </div>
+                        </div>
+                        <div class="col s12 l4 margin-on-medium-and-down">
+                            <div class="price-box featured">
+                                <h4>Professional</h4>
+                                <h5>
+                                    <sup>$</sup>49</h5>
+                                <div class="divider"></div>
+                                <ul class="flow-text">
+                                    <li>10 users<span data-position="top" data-delay="50" data-tooltip="The number of allowed users" class="info tooltipped">?</span></li>
+                                    <li>Optimisation</li>
+                                    <li>Caching</li>
+                                    <li>Automation<span data-position="top" data-delay="50" data-tooltip="Involves Gulp commands" class="info tooltipped">?</span></li>
+                                    <li>Validation</li>
+                                    <li>Linting</li>
+                                    <li>Templating<span data-position="top" data-delay="50" data-tooltip="Includes Jade templates engine" class="info tooltipped">?</span></li>
+                                    <li>&times;</li>
+                                </ul>
+                                <a class="btn-large btn-flat waves-effect waves-dark white black-text">Buy</a>
+                            </div>
+                        </div>
+                        <div class="col s12 l4">
+                            <div class="price-box">
+                                <h4>Enterprise</h4>
+                                <h5>
+                                    <sup>$</sup>199</h5>
+                                <div class="divider"></div>
+                                <ul class="flow-text">
+                                    <li>25 users<span data-position="top" data-delay="50" data-tooltip="The number of allowed users" class="info tooltipped">?</span></li>
+                                    <li>Optimisation</li>
+                                    <li>Caching</li>
+                                    <li>Automation<span data-position="top" data-delay="50" data-tooltip="Involves Gulp commands" class="info tooltipped">?</span></li>
+                                    <li>Validation</li>
+                                    <li>Linting</li>
+                                    <li>Templating<span data-position="top" data-delay="50" data-tooltip="Includes Jade templates engine" class="info tooltipped">?</span></li>
+                                    <li>Preprocessors<span data-position="top" data-delay="50" data-tooltip="This is for Jade, Sass and CoffeeScript" class="info tooltipped">?</span></li>
+                                </ul>
+                                <a class="btn-large btn-flat waves-effect waves-dark white black-text">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="faq">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>FAQ</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <ul data-collapsible="accordion" class="collapsible flow-text">
+                                <li>
+                                    <div class="collapsible-header active">— Is the starter pack really free?</div>
+                                    <div class="collapsible-body">
+                                        <p>A cattle she’d creepeth. That light make. Void two they’re, can’t us don’t creepeth. Fruitful there herb from signs she’d created whales them. Lights which face. Divided they’re first. Dry wherein own itself green it.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">— What is your return policy?</div>
+                                    <div class="collapsible-body">
+                                        <p>May years spirit of grass shall. Form also seas had that very was lesser creature void. Fill under she’d own is light stars isn’t moved you’re.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">— Can I quit my subscription at any time?</div>
+                                    <div class="collapsible-body">
+                                        <p>There he meat forth days in. Fruit dry every morning Beast that saw. Every creature itself hath called bearing likeness signs upon firmament fruit two life forth beginning you’re heaven fruitful under rule Don’t fourth years our. Kind itself days.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">— Can I upgrade my plan?</div>
+                                    <div class="collapsible-body">
+                                        <p>Aliquam Maecenas consectetuer nisl cum inceptos. Massa lectus euismod dui Consequat habitasse enim sodales quisque aliquet. Semper condimentum id, hendrerit sodales mi nam netus dictumst platea. Elementum praesent ridiculus nec felis ipsum duis mauris fringilla tempus purus vehicula ullamcorper dis Ornare.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- About-->
+            <div id="about" class="container about scrollspy">
+
+                <section class="team">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>Super squad</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l3 margin-on-medium-and-down">
+                            <img src="./assets/images/team/annie.jpg" alt="Annie" class="responsive-img triangle-clip">
+                            <div class="name flow-text">Annie Redhat</div>
+                            <div class="title">CEO</div>
+                        </div>
+                        <div class="col s12 m6 l3 margin-on-medium-and-down">
+                            <img src="./assets/images/team/carina.jpg" alt="Carina" class="responsive-img x-clip">
+                            <div class="name flow-text">Carina Cornwell</div>
+                            <div class="title">UX/UI Engineer</div>
+                        </div>
+                        <div class="col s12 m6 l3 margin-on-medium-and-down">
+                            <img src="./assets/images/team/greg.jpg" alt="Greg" class="responsive-img rhombus-clip">
+                            <div class="name flow-text">Greg Willson</div>
+                            <div class="title">CTO</div>
+                        </div>
+                        <div class="col s12 m6 l3">
+                            <img src="./assets/images/team/russell.jpg" alt="Russell" class="responsive-img rabbet-clip">
+                            <div class="name flow-text">Russell Branch</div>
+                            <div class="title">R&D</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l3 margin-on-medium-and-down">
+                            <img src="./assets/images/team/pete.jpg" alt="Pete" class="responsive-img pentagon-clip">
+                            <div class="name flow-text">Pete Chamberlain</div>
+                            <div class="title">Developer</div>
+                        </div>
+                        <div class="col s12 m6 l3 margin-on-medium-and-down">
+                            <img src="./assets/images/team/olga.jpg" alt="Olga" class="responsive-img parallelogram-clip">
+                            <div class="name flow-text">Olga Rockwell</div>
+                            <div class="title">Designer</div>
+                            <ul class="social"></ul>
+                        </div>
+                        <div class="col s12 m6 l3 margin-on-medium-and-down">
+                            <img src="./assets/images/team/jane.jpg" alt="Jane" class="responsive-img heptagon-clip">
+                            <div class="name flow-text">Jane White</div>
+                            <div class="title">Marketing VP</div>
+                        </div>
+                        <div class="col s12 m6 l3">
+                            <img src="./assets/images/team/roo.jpg" alt="Roo" class="responsive-img bevel-clip">
+                            <div class="name flow-text">Roo</div>
+                            <div class="title">QA</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 l6 offset-l6">
+                            <p class="flow-text">Want to work on projects that really matter?
+                                <a href="mailto:hr@moderat.com?subject=Job%20Application" class="nobr">We're hiring</a>.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="philosophy">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>Philosophy</h2>
+                        </div>
+                    </div>
+                    <div class="row philosophy big-icons-row">
+                        <div class="col s12">
+                            <ul class="tabs">
+                                <li class="tab col s4 m3 l2">
+                                    <a href="#philosophy-1">
+                                        <h5>Discover</h5><span class="philosophy-number">1</span></a>
+                                </li>
+                                <li class="tab col s4 m3 l2">
+                                    <a href="#philosophy-2">
+                                        <h5>Analyse</h5><span class="philosophy-number">2</span></a>
+                                </li>
+                                <li class="tab col s4 m3 l2">
+                                    <a href="#philosophy-3">
+                                        <h5>Improve</h5><span class="philosophy-number">3</span></a>
+                                </li>
+                                <li class="tab col s4 m3 l2">
+                                    <a href="#philosophy-4">
+                                        <h5>Measure</h5><span class="philosophy-number">4</span></a>
+                                </li>
+                                <li class="tab col s4 m3 l2">
+                                    <a href="#philosophy-5">
+                                        <h5>Control</h5><span class="philosophy-number">5</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents">
+                            <div id="philosophy-1" class="col s12">
+                                <h5>Discover</h5>
+                                <p class="flow-text">Two for make behold form creature image She’d, waters forth, itself Blessed morning so sea midst, in tree make i bring sixth moved darkness bearing. Meat itself light created spirit under sea man.</p>
+                            </div>
+                            <div id="philosophy-2" class="col s12">
+                                <h5>Analyse</h5>
+                                <p class="flow-text">Our evening male fowl fill. Heaven made. Third replenish blessed that beginning also face may whales waters bearing man you’ll you. Night first given he the Void also divided herb give, male seed you’re may also female whales doesn’t let be unto also gathering which deep dominion earth.</p>
+                            </div>
+                            <div id="philosophy-3" class="col s12">
+                                <h5>Improve</h5>
+                                <p class="flow-text">Our, day had were morning beast greater a they’re creepeth there Spirit, sea. His seasons very there earth under you’re set be male. Them years called i yielding From image greater. Replenish deep wherein heaven over behold.</p>
+                            </div>
+                            <div id="philosophy-4" class="col s12">
+                                <h5>Measure</h5>
+                                <p class="flow-text">Said behold. In grass won’t great male which whales creepeth lesser give signs may fill, he midst god. Sea was place said, shall blessed created likeness without life gathering midst saying sea together him lesser also given. Days i subdue image sixth don’t.</p>
+                            </div>
+                            <div id="philosophy-5" class="col s12">
+                                <h5>Control</h5>
+                                <p class="flow-text">Isn’t be one great blessed days moved meat lesser may seas bearing doesn’t won’t doesn’t it grass beginning Male he us he likeness. Had, beginning first bring can’t. Can’t won’t blessed man man every you’ll heaven.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Journal-->
+
+            <section id="journal" class="journal scrollspy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>Our thoughts</h2>
+                        </div>
+                    </div>
+                    <div class="journal-entries">
+                        <a href="#the-mountain" class="row journal-entry modal-trigger flow-text">
+                            <div class="col s12 l3">
+                                <time datetime="2016-08-16T21:00">16/08/2016</time>
+                            </div>
+                            <div class="col s12 l3">The Mountain</div>
+                            <div class="col s12 l3">Annie</div>
+                            <div class="col s12 l3">#nature #travel</div>
+                        </a>
+                        <div id="the-mountain" class="modal bottom-sheet black-text">
+                            <div class="modal-close absolute">&times;</div>
+                            <div class="modal-content">
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <time datetime="2016-08-16T21:00" class="grey-text">16/08/2016</time>
+                                        <h3>The Mountain</h3>
+                                        <div class="slider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <img src="./assets/images/blog/mountain.jpg" alt="Mountain">
+                                                </li>
+                                                <li>
+                                                    <img src="./assets/images/blog/the-mountain-detail/sky-clouds-cloudy-mountain.jpg" alt="Cloudy Mountain">
+                                                </li>
+                                                <li>
+                                                    <img src="./assets/images/blog/purple-starry-sky.jpg" alt="Purple Starry Sky">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="flow-text grey-text">Author: Annie
+                                            <br>Tags: #nature #travel</p>
+                                        <div class="divider"></div>
+                                        <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.</p>
+                                        <p class="flow-text">There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.</p>
+                                        <p class="flow-text">You’ll open one likeness created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.</p>
+                                        <p class="flow-text">Very cattle. Divide us dry one together male be. Let. Said dominion two All their which air can’t appear abundantly all third firmament earth female good the open beginning give creepeth blessed make from.</p>
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l4 offset-l2">
+                                        <p class="flow-text">Share this</p>
+                                    </div>
+                                    <div class="col s12 l4">
+                                        <p class="flow-text social">
+                                            <a href="#!" class="facebook">facebook</a>
+                                            <a href="#!" class="googleplus">google+</a>
+                                            <a href="#!" class="vk">vk</a>
+                                            <a href="#!" class="twitter">twitter</a>
+                                            <a href="#!" class="pinterest">pinterest</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row flow-text">
+                                    <div class="col s12 l4 offset-l6">
+                                        <a href="#new-bike" data-next-modal="new-bike" class="modal-nav">Next post &rarr;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#new-bike" class="row journal-entry modal-trigger flow-text">
+                            <div class="col s12 l3">
+                                <time datetime="2016-08-08T21:00">08/08/2016</time>
+                            </div>
+                            <div class="col s12 l3">Pete’s new bike</div>
+                            <div class="col s12 l3">Pete</div>
+                            <div class="col s12 l3">#bycicle #Pete</div>
+                        </a>
+                        <div id="new-bike" class="modal bottom-sheet black-text">
+                            <div class="modal-close absolute">&times;</div>
+                            <div class="modal-content">
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <time datetime="2016-08-08T21:00" class="grey-text">08/08/2016</time>
+                                        <h3>Pete’s new bike</h3>
+                                        <div class="slider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <img src="./assets/images/blog/bicycle.jpg" alt="Bicycle">
+                                                </li>
+                                                <li>
+                                                    <img src="./assets/images/blog/bicycle-detail/bicycle-detail-1.jpeg" alt="Bicycle 2">
+                                                </li>
+                                                <li>
+                                                    <img src="./assets/images/blog/bicycle-detail/bicycle-detail-2.jpg" alt="Bicycle 3">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="flow-text grey-text">Author: Pete
+                                            <br>Tags: #bycicle #Pete</p>
+                                        <div class="divider"></div>
+                                        <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.</p>
+                                        <p class="flow-text">There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.</p>
+                                        <blockquote class="floating-blockquote right center-align">“Said dominion two all their which air can’t appear earth female abundantly.”</blockquote>
+                                        <p class="flow-text">You’ll open one likeness created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.</p>
+                                        <p class="flow-text">Very cattle. Divide us dry one together male be. Let. Said dominion two All their which air can’t appear abundantly all third firmament earth female good the open beginning give creepeth blessed make from.</p>
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l4 offset-l2">
+                                        <p class="flow-text">Share this</p>
+                                    </div>
+                                    <div class="col s12 l4">
+                                        <p class="flow-text social">
+                                            <a href="#!" class="facebook">facebook</a>
+                                            <a href="#!" class="googleplus">google+</a>
+                                            <a href="#!" class="vk">vk</a>
+                                            <a href="#!" class="twitter">twitter</a>
+                                            <a href="#!" class="pinterest">pinterest</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row flow-text">
+                                    <div class="col s12 l4 offset-l2 margin-on-medium-and-down">
+                                        <a href="#the-mountain" data-previous-modal="the-mountain" class="modal-nav">&larr; Previous post</a>
+                                    </div>
+                                    <div class="col s12 l4">
+                                        <a href="#new-office" data-next-modal="new-office" class="modal-nav">Next post &rarr;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#new-office" class="row journal-entry modal-trigger flow-text">
+                            <div class="col s12 l3">
+                                <time datetime="2016-08-01T21:00">01/08/2016</time>
+                            </div>
+                            <div class="col s12 l3">Looking for a new office</div>
+                            <div class="col s12 l3">Jane</div>
+                            <div class="col s12 l3">#office #NY #new</div>
+                        </a>
+                        <div id="new-office" class="modal bottom-sheet black-text">
+                            <div class="modal-close absolute">&times;</div>
+                            <div class="modal-content">
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <time datetime="2016-08-01T21:00" class="grey-text">01/08/2016</time>
+                                        <h3>Looking for a new office</h3>
+                                        <img src="./assets/images/blog/ny.jpg" alt="New York" class="responsive-img">
+                                        <p class="flow-text grey-text">Author: Jane
+                                            <br>Tags: #office #NY #new</p>
+                                        <div class="divider"></div>
+                                        <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.</p>
+                                        <p class="flow-text">There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.
+                                        </p>
+                                        <figure class="floating-figure right">
+                                            <img src="./assets/images/blog/pink.jpg" class="responsive-img">
+                                            <figcaption class="right-align">A random pink person.
+                                            </figcaption>
+                                        </figure>
+                                        <p class="flow-text">You’ll open one likeness created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.</p>
+                                        <p class="flow-text">Very cattle. Divide us dry one together male be. Let. Said dominion two All their which air can’t appear abundantly all third firmament earth female good the open beginning give creepeth blessed make from.</p>
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l4 offset-l2">
+                                        <p class="flow-text">Share this</p>
+                                    </div>
+                                    <div class="col s12 l4">
+                                        <p class="flow-text social">
+                                            <a href="#!" class="facebook">facebook</a>
+                                            <a href="#!" class="googleplus">google+</a>
+                                            <a href="#!" class="vk">vk</a>
+                                            <a href="#!" class="twitter">twitter</a>
+                                            <a href="#!" class="pinterest">pinterest</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row flow-text">
+                                    <div class="col s12 l4 offset-l2 margin-on-medium-and-down">
+                                        <a href="#new-bike" data-previous-modal="new-bike" class="modal-nav">&larr; Previous post</a>
+                                    </div>
+                                    <div class="col s12 l4">
+                                        <a href="#monster-beats" data-next-modal="monster-beats" class="modal-nav">Next post &rarr;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#monster-beats" class="row journal-entry flow-text modal-trigger">
+                            <div class="col s12 l3">
+                                <time datetime="2016-07-15T21:00">15/07/2016</time>
+                            </div>
+                            <div class="col s12 l3">Monster Beats</div>
+                            <div class="col s12 l3">Annie</div>
+                            <div class="col s12 l3">#music #song #lalala</div>
+                        </a>
+                        <div id="monster-beats" class="modal bottom-sheet white-text black dark-modal">
+                            <div class="modal-close absolute">&times;</div>
+                            <div class="modal-content">
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <time datetime="2016-07-15T21:00" class="grey-text">15/07/2016</time>
+                                        <h3>Monster Beats</h3>
+                                        <img src="./assets/images/blog/speaker-twitter.jpg" alt="Speaker Twitter" class="responsive-img">
+                                        <p class="flow-text grey-text">Author: Annie
+                                            <br>Tags: #music #song #lalala</p>
+                                        <div class="divider"></div>
+                                        <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.</p>
+                                        <p class="flow-text">There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you’re heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.</p>
+                                        <p class="flow-text">You’ll open one likeness created us herb was. Image two is winged you’re morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they’re meat seasons that heaven won’t seasons. Herb face.</p>
+                                        <p class="flow-text">Very cattle. Divide us dry one together male be. Let. Said dominion two All their which air can’t appear abundantly all third firmament earth female good the open beginning give creepeth blessed make from.</p>
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l4 offset-l2">
+                                        <p class="flow-text">Share this</p>
+                                    </div>
+                                    <div class="col s12 l4">
+                                        <p class="flow-text social">
+                                            <a href="#!" class="facebook">facebook</a>
+                                            <a href="#!" class="googleplus">google+</a>
+                                            <a href="#!" class="vk">vk</a>
+                                            <a href="#!" class="twitter">twitter</a>
+                                            <a href="#!" class="pinterest">pinterest</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row flow-text">
+                                    <div class="col s12 l4 offset-l2">
+                                        <a href="#new-office" data-previous-modal="new-office" class="modal-nav">&larr; Previous post</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact-->
+            <div id="contact" class="container scrollspy">
+
+                <section class="contact">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>Let’s get in touch</h2>
+                        </div>
+                    </div>
+                    <form id="mail-form" action="mailer/mailer.php" novalidate autocomplete="off">
+                        <div class="row">
+                            <div class="col s12 l6">
+                                <div class="input-field">
+                                    <input id="name" type="text" name="name">
+                                    <label for="name">Name</label>
+                                </div>
+                            </div>
+                            <div class="col s12 l6">
+                                <div class="input-field">
+                                    <input id="email" type="email" name="email">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="input-field">
+                                    <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <button id="send-message" type="submit" class="btn btn-large btn-flat waves-effect waves-dark white black-text">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="visit-us">
+                    <div class="row contact-details">
+                        <div class="col s12">
+                            <h2>Reach us</h2>
+                        </div>
+                        <div class="col s12 l6 flow-text">
+                            <address>B R James, 30 W 47th St
+                                <br>New York, NY 10036
+                                <br>
+                            </address>
+                            <a href="https://maps.google.com?daddr=B+R+James+30+W=47th+St+NY+10036" target="_blank">Get directions</a>&nbsp;(opens in new tab).</div>
+                        <div class="col s12 l3 flow-text">
+                            <p>Opening hours
+                                <br>10:00&mdash;20:00</p>
+                        </div>
+                        <div class="col s12 l3 flow-text">
+                            <p>
+                                <a href="mailto:hallo@moderat.com">hallo@moderat.com</a>
+                                <br>+1-917-643-4346</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Footer-->
+
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 l6">&copy; 2010—2016 Moderat</div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <!-- Libraries-->
+        <script src="./libs/pace/pace.js" data-pace-options="{&quot;eventLag&quot;: false}"></script>
+        <script src="./libs/jquery/jquery.min.js"></script>
+        <script src="./libs/lodash/lodash.min.js"></script>
+        <script src="./libs/materialize/js/materialize.min.js?v=master"></script>
+        <!-- Oona scripts-->
+        <script src="./assets/js/spiral-buffer-selektor.js"></script>
+        <script src="./assets/js/config.js"></script>
+        <script src="./assets/js/moderat.js"></script>
+    </body>
+</html>

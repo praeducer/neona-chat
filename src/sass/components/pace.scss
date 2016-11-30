@@ -1,0 +1,12 @@
+.pace {
+    .pace-progress-inner {
+        box-shadow: none;
+    }
+
+    @media #{$medium-and-down} {
+        .pace-activity {
+            right: 50%;
+            margin-right: -7px;
+        }
+    }
+}

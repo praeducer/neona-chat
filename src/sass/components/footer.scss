@@ -1,0 +1,16 @@
+footer {
+    padding: 5rem 0;
+
+    @media #{$small-and-down} {
+        padding: 3.5rem 0;
+    }
+
+    @media #{$small-and-down} {
+        padding: 2.5rem 0;
+        text-align: center;
+    }
+
+    .row {
+        margin-bottom: 0;
+    }
+}

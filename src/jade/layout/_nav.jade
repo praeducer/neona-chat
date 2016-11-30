@@ -1,0 +1,31 @@
+.navbar-fixed
+    nav
+        .nav-wrapper
+            .container
+                .row
+                    .col.s12.l6
+                        // Brand or logo
+                        a.brand(href='#!') Moderat
+
+                        // Menu button visible on tablet and mobile
+                        span.right.show-on-medium-and-down.hide-on-large-only
+                            a#sidenav-toggle.sidenav-toggle(href='#', data-activates='slide-out') Menu
+
+                    .col.s12.l6
+                        // Desktop menu version
+                        ul.hidden.hide-on-med-and-down.table-of-contents
+                            li: a(href='#services') Services
+                            li: a(href='#work') Work
+                            li: a(href='#prices') Prices
+                            li: a(href='#about') About
+                            li: a(href='#journal') Journal
+                            li: a(href='#contact') Contact
+
+                        // Tablet and mobile menu
+                        ul#slide-out.side-nav
+                            li: a(href='#services') Services
+                            li: a(href='#work') Work
+                            li: a(href='#prices') Prices
+                            li: a(href='#about') About
+                            li: a(href='#journal') Journal
+                            li: a(href='#contact') Contact

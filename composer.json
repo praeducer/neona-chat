@@ -1,0 +1,12 @@
+{
+    "name": "yegorborisenco/moderat",
+    "authors": [
+        {
+            "name": "Yegor Borisenco",
+            "email": "pimmey@pimmey.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^5.2"
+    }
+}

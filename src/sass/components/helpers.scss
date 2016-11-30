@@ -1,0 +1,13 @@
+.margin-on-medium-and-down {
+    @media #{$medium-and-down} {
+        margin-bottom: 2rem;
+    }
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+.intro {
+    margin-top: 5rem;
+}

@@ -1,0 +1,48 @@
+.container#contact.scrollspy
+    section.contact
+        .row
+            .col.s12
+                h2 Let’s get in touch
+        form#mail-form(action='mailer/mailer.php', novalidate, autocomplete='off')
+            .row
+                .col.s12.l6
+                    .input-field
+                        input#name(type='text', name='name')
+                        label(for='name') Name
+                .col.s12.l6
+                    .input-field
+                        input#email(type='email', name='email')
+                        label(for='email') Email
+            .row
+                .col.s12
+                    .input-field
+                        textarea#message.materialize-textarea(name='message')
+                        label(for='message') Message
+            .row
+                .col.s12
+                    button#send-message.btn.btn-large.btn-flat.waves-effect.waves-dark.white.black-text(type='submit') Send
+
+    section.visit-us
+        .row.contact-details
+            .col.s12
+                h2 Reach us
+            .col.s12.l6.flow-text
+                address
+                    | B R James, 30 W 47th St
+                    br
+                    | New York, NY 10036
+                    br
+                a(href='https://maps.google.com?daddr=B+R+James+30+W=47th+St+NY+10036', target='_blank') Get directions
+                | &nbsp;(opens in new tab).
+
+            .col.s12.l3.flow-text
+                p
+                    | Opening hours
+                    br
+                    | 10:00&mdash;20:00
+
+            .col.s12.l3.flow-text
+                p
+                    a(href='mailto:hallo@moderat.com') hallo@moderat.com
+                    br
+                    | +1-917-643-4346

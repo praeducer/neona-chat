@@ -1,0 +1,48 @@
+body {
+    color: $white;
+
+    &.dark {
+        color: $black;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1600px;
+
+    @media #{$medium-and-up} {
+        width: 85%;
+    }
+
+    @media #{$large-and-up} {
+        width: 80%;
+    }
+
+    &.full-width {
+        width: 100%;
+    }
+
+    &.row.narrow-row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+section {
+    padding: 4rem 0;
+}
+
+canvas {
+    display: block;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+}
+
+.dark {
+    .divider {
+        background-color: transparentize($black, .5);
+    }
+}

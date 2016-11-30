@@ -1,0 +1,100 @@
+.contact {
+    .input-field label {
+        left: 0;
+        color: $white;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=email],
+    textarea.materialize-textarea {
+        border-bottom-color: $white;
+    }
+
+    .input-field input[type=text]:focus:not([readonly]),
+    .input-field input[type=email]:focus,
+    .input-field input[type=email]:focus:not([readonly]),
+    input[type=email]:focus,
+    input[type=email]:focus:not([readonly]),
+    textarea.materialize-textarea:focus,
+    textarea.materialize-textarea:focus:not([readonly]) {
+        border-bottom-color: $white;
+        box-shadow: none;
+
+        + label {
+            color: $white;
+        }
+    }
+
+    .input-field input[type=text].valid,
+    .input-field input[type=email].valid,
+    textarea.materialize-textarea.valid {
+        border-bottom-color: $white;
+        box-shadow: none;
+    }
+
+    .input-field input[type=text].invalid,
+    .input-field input[type=email].invalid,
+    textarea.materialize-textarea.invalid {
+        border-bottom-color: $white;
+        box-shadow: none;
+    }
+
+    .input-field .prefix.active {
+        color: $white;
+    }
+}
+
+.visit-us {
+    address {
+        margin: 1em 0;
+        font-style: normal;
+    }
+}
+
+.dark .contact {
+    .input-field label {
+        left: 0;
+        color: $black;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=email],
+    textarea.materialize-textarea {
+        border-bottom-color: $black;
+    }
+
+    .input-field input[type=text]:focus:not([readonly]),
+    .input-field input[type=email]:focus,
+    .input-field input[type=email]:focus:not([readonly]),
+    input[type=email]:focus,
+    input[type=email]:focus:not([readonly]),
+    textarea.materialize-textarea:focus,
+    textarea.materialize-textarea:focus:not([readonly]) {
+        border-bottom-color: $black;
+        box-shadow: none;
+
+        + label {
+            color: $black;
+        }
+    }
+
+    .input-field input[type=text].valid,
+    .input-field input[type=email].valid,
+    textarea.materialize-textarea.valid {
+        border-bottom-color: $black;
+        box-shadow: none;
+    }
+
+    .input-field input[type=text].invalid,
+    .input-field input[type=email].invalid,
+    textarea.materialize-textarea.invalid {
+        border-bottom-color: $black;
+        box-shadow: none;
+    }
+
+    .input-field .prefix.active {
+        color: $black;
+    }
+}
