@@ -7,7 +7,7 @@
         <!-- Trying to force IE to perform at its best-->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <!-- Meta description, aim for about 150 characters-->
-        <meta name="description" content="This theme is a very beautiful and minimalistic theme with a gorgeous animation that will make the user remember your website and want to come back.">
+        <meta name="description" content="A chat bot that helps you understand the fields of interactive intelligence and cognitive computing.">
         <!-- Stylesheets-->
         <link rel="stylesheet" href="./libs/pace/themes/white/pace-theme-flash.css">
         <link rel="stylesheet" href="./libs/materialize/css/materialize.min.css?v=master">
@@ -22,60 +22,221 @@
         <link rel="shortcut icon" href="favicon.ico">
         <meta name="msapplication-config" content="./favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        <script>
-            var isModeratHome = true;
-        </script>
         <!-- Site title-->
-        <title>Moderat — Choose Your Demo</title>
+        <title>Neona</title>
     </head>
-    <body class="choose-demo">
-        <div class="container team black-text center">
-            <div class="row">
-                <div class="col s12">
-                    <h1>Choose your moderat demo</h1>
+    <body class="mark dark">
+        <canvas id="spiral-buffer-mark" class="spiral-buffer"></canvas>
+        <main>
+            <!-- Navigation-->
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s12 l6">
+                                    <!-- Brand or logo-->
+                                    <a href="#!" class="brand">Neona</a>
+                                    <!-- Menu button visible on tablet and mobile--><span class="right show-on-medium-and-down hide-on-large-only"><a id="sidenav-toggle" href="#" data-activates="slide-out" class="sidenav-toggle">Menu</a></span></div>
+                                <div class="col s12 l6">
+                                    <!-- Desktop menu version-->
+                                    <ul class="hidden hide-on-med-and-down table-of-contents">
+                                        <li>
+                                            <a href="#services">Channels</a>
+                                        </li>
+                                        <li>
+                                            <a href="#about">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tablet and mobile menu-->
+                                    <ul id="slide-out" class="side-nav">
+                                        <li>
+                                            <a href="#services">Channels</a>
+                                        </li>
+                                        <li>
+                                            <a href="#about">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Intro-->
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6 offset-l6 flow-text intro">Neona helps people understand the purpose and value of interactive intelligence and cognitive computing. She can teach concepts, find online courses, share recent news, and find jobs in this exciting subfield of artificial intelligence.
+                        <a href="#contact">Reach out</a>&nbsp;if you'd like her creators to create something similar for you.</div>
                 </div>
             </div>
-            <div class="row">
-                <a href="ethereal.html" class="col s12 m6 l4">
-                    <canvas id="spiral-buffer-ethereal" class="triangle-clip"></canvas>
-                    <h4>Ethereal</h4>
-                </a>
-                <a href="gita.html" class="col s12 m6 l4">
-                    <canvas id="spiral-buffer-gita" class="rhombus-clip"></canvas>
-                    <h4>Gita</h4>
-                </a>
-                <a href="ilona.html" class="col s12 m6 l4">
-                    <canvas id="spiral-buffer-ilona" class="heptagon-clip"></canvas>
-                    <h4>Ilona</h4>
-                </a>
-                <a href="kingdom.html" class="col s12 m6 l4">
-                    <canvas id="spiral-buffer-kingdom" class="rabbet-clip"></canvas>
-                    <h4>Kingdom</h4>
-                </a>
-                <a href="mark.html" class="col s12 m6 l4">
-                    <canvas id="spiral-buffer-mark" class="pentagon-clip"></canvas>
-                    <h4>Mark</h4>
-                </a>
-                <a href="selektor.html" class="col s12 m6 l4">
-                    <canvas id="spiral-buffer-selektor" class="x-clip"></canvas>
-                    <h4>Selektor</h4>
-                </a>
+            <!-- Services-->
+
+            <section id="services" class="services scrollspy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>Channels</h2>
+                        </div>
+                    </div>
+                    <div class="service-items">
+                        <div class="row">
+                            <div class="col s12 l6 margin-on-medium-and-down">
+                                <i class="icon-basic-cloud"></i><span class="flow-text">Skype</span></div>
+                            <div class="col s12 l6">
+                                <i class="icon-basic-cloud"></i><span class="flow-text">Facebook Messenger</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 l6 margin-on-medium-and-down">
+                                <i class="icon-basic-cloud"></i><span class="flow-text">Slack</span></div>
+                            <div class="col s12 l6">
+                                <i class="icon-basic-cloud"></i><span class="flow-text">Web</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About-->
+            <div id="about" class="container about scrollspy">
+
+                <section class="philosophy">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>Technology</h2>
+                        </div>
+                    </div>
+                    <div class="row philosophy big-icons-row">
+                        <div class="col s12">
+                            <ul class="tabs">
+                                <li class="tab col s4 m3 l2">
+                                    <a href="#philosophy-1">
+                                        <h5>Azure</h5><span class="philosophy-number">1</span></a>
+                                </li>
+                                <li class="tab col s4 m3 l2">
+                                    <a href="#philosophy-2">
+                                        <h5>Node.js</h5><span class="philosophy-number">2</span></a>
+                                </li>
+                                <li class="tab col s4 m3 l2">
+                                    <a href="#philosophy-3">
+                                        <h5>DocumentDB</h5><span class="philosophy-number">3</span></a>
+                                </li>
+                                <li class="tab col s4 m3 l2">
+                                    <a href="#philosophy-4">
+                                        <h5>Azure Search</h5><span class="philosophy-number">4</span></a>
+                                </li>
+                                <li class="tab col s4 m3 l2">
+                                    <a href="#philosophy-5">
+                                        <h5>Bot Framework</h5><span class="philosophy-number">5</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents">
+                            <div id="philosophy-1" class="col s12">
+                                <h5>Azure</h5>
+                                <p class="flow-text">An open, flexible, enterprise-grade cloud computing platform. Neona uses Azure Functions to process events with a serverless code architecture. These functions are responsible for extracting data from Wikipedia, processing it into the desired form, and storing it in DocumentDB.</p>
+                            </div>
+                            <div id="philosophy-2" class="col s12">
+                                <h5>Node</h5>
+                                <p class="flow-text">An event-driven I/O server-side JavaScript environment. The Azure Functions were written in Node.js. It was used to call the MediaWiki action API, a web service that provides convenient access to wiki features, data, and meta-data over HTTP. Using Node.js’ request module (and JavaScript Promises), the API is called with very carefully constructed queries to return just the data Neona would need.</p>
+                            </div>
+                            <div id="philosophy-3" class="col s12">
+                                <h5>DocumentDB</h5>
+                                <p class="flow-text">A distributed database service for managing JSON documents at Internet scale. It is a highly-flexible key-value store that integrates closely with other Microsoft systems. It also interfaces well with Node.js. It allows Neona's creators to experiment with several data models with little refactoring. It is Neona's knowledge-base.</p>
+                            </div>
+                            <div id="philosophy-4" class="col s12">
+                                <h5>Azure Search</h5>
+                                <p class="flow-text">A fully managed search-as-a-service in the cloud. It indexes the contents of the knowledge-base and provides an HTTP endpoint Neona can hit to query the knowledge-base. It natively supports DocumentDB.</p>
+                            </div>
+                            <div id="philosophy-5" class="col s12">
+                                <h5>Microsoft Bot Framework</h5>
+                                <p class="flow-text">This framework provided an impressive amount of functionality and was the inspiration for this project. For Neona, it provides the connection to the various channels, manages incoming and outgoing messages, and helps orchestrate the dialogue flow. It also integrates naturally with LUIS, a fast and effective way of adding language understanding to applications. </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
-        <div style="bottom: 45px; right: 25px" class="fixed-action-btn">
-            <a href="#!" class="btn-floating btn-large green">
-                <i class="icon-ecommerce-cart-plus"></i>
-            </a>
-        </div>
+            <!-- Contact-->
+            <div id="contact" class="container scrollspy">
+
+                <section class="contact">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2>Let’s get in touch</h2>
+                        </div>
+                    </div>
+                    <form id="mail-form" action="mailer/mailer.php" novalidate autocomplete="off">
+                        <div class="row">
+                            <div class="col s12 l6">
+                                <div class="input-field">
+                                    <input id="name" type="text" name="name">
+                                    <label for="name">Name</label>
+                                </div>
+                            </div>
+                            <div class="col s12 l6">
+                                <div class="input-field">
+                                    <input id="email" type="email" name="email">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="input-field">
+                                    <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <button id="send-message" type="submit" class="btn btn-large btn-flat waves-effect waves-dark white black-text">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="visit-us">
+                    <div class="row contact-details">
+                        <div class="col s12">
+                            <h2>Reach her</h2>
+                        </div>
+                        <div class="col s12 l6 flow-text">
+                            <address>Atlanta, GA
+                                <br>
+                            </address>
+                        </div>
+                        <div class="col s12 l3 flow-text">
+                            <p>
+                                <a href="mailto:neona.chat@outlook.com">neona.chat@outlook.com</a>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Footer-->
+
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 l6">&copy; 2016—2017 Neona</div>
+                    </div>
+                </div>
+            </footer>
+        </main>
         <!-- Libraries-->
         <script src="./libs/pace/pace.js" data-pace-options="{&quot;eventLag&quot;: false}"></script>
         <script src="./libs/jquery/jquery.min.js"></script>
         <script src="./libs/lodash/lodash.min.js"></script>
-        <script src="./assets/js/spiral-buffer-ethereal.js"></script>
-        <script src="./assets/js/spiral-buffer-gita.js"></script>
-        <script src="./assets/js/spiral-buffer-ilona.js"></script>
-        <script src="./assets/js/spiral-buffer-kingdom.js"></script>
+        <script src="./libs/materialize/js/materialize.min.js?v=master"></script>
+        <!-- Oona scripts-->
         <script src="./assets/js/spiral-buffer-mark.js"></script>
-        <script src="./assets/js/spiral-buffer-selektor.js"></script>
+        <script src="./assets/js/config.js"></script>
+        <script src="./assets/js/moderat.js"></script>
     </body>
 </html>

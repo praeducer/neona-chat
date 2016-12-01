@@ -1,12 +1,12 @@
 <?php
 
-$my_email = 'my@email.com';
-
+$my_email = 'neona.chat@outlook.com';
+// TODO: Store user account details in env
 $SMTP = array(
     'enabled' => true,
-    'host' => 'smtp.gmail.com',
-    'username' => 'user@gmail.com',
-    'password' => 'password12345',
-    'port' => 465,
-    'encryption' => 'ssl'
+    'host' => 'smtp.live.com',
+    'username' => 'neona.chat@outlook.com',
+    'password' => 'vdpve8x4',
+    'port' => 587,
+    'encryption' => 'tls'
 );
