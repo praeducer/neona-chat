@@ -29,7 +29,7 @@ Author profile: https://themeforest.net/user/pimmey
 18 Slider / .slider .indicators .indicator-item
 19 Toasts / .toast
 20 Choose Demo / .choose-demo
-
+20 Theme Customizations
 
 [Color codes]
 
@@ -205,7 +205,13 @@ blockquote: 2rem/1.5
 
 /*---------------------------------------------------------------------------------------
 
-20 Toasts
+20 Choose Demo
 
 -----------------------------------------------------------------------------------------*/
 @import 'components/choose-demo';
+
+/*---------------------------------------------------------------------------------------
+21 Theme Customizations
+
+-----------------------------------------------------------------------------------------*/
+@import 'moderat-customization';
