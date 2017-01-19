@@ -48,7 +48,8 @@ else
         'message' => htmlspecialchars($_POST['message'])
     );
 
-    $mail->setFrom($form_data['email'], $form_data['name']);
+    $mail->setFrom($SMTP['username'], 'Neona');
+    //$mail->setFrom($form_data['email'], $form_data['name']);
 
     $mail->Subject = 'New message via contact form';
 
