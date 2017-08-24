@@ -97,9 +97,12 @@ App = {
         var initialMessage = $message.html();
 
         $sendButton.on('click', function (e) {
-            //console.log('click');
             e.preventDefault();
-            App._sendMessage($name, $email, $message, initialMessage, $sendButton);
+            if($("#hpfield").val().length == 0){
+                //console.log('click');
+                App._sendMessage($name, $email, $message, initialMessage, $sendButton);
+            }
+
         });
     },
 
