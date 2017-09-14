@@ -11,17 +11,21 @@ $(function() {
   var copyCanvas = spiralBuffer(themes);
   var canvas = document.getElementById("spiral-buffer-header");
   var container = document.getElementsByTagName("nav")[0];
-  if (typeof isModeratHome !== "undefined") {
-    canvas.width = 1000;
-    canvas.height = 67;
-  } else {
-    canvas.width = window.innerWidth;
-    canvas.height = container.clientHeight;
-    window.onresize = function() {
+  function setHeaderCanvasDim() {
+    if (typeof isModeratHome !== "undefined") {
+      canvas.width = 1000;
+      canvas.height = 67;
+    } else {
       canvas.width = window.innerWidth;
       canvas.height = container.clientHeight;
-    };
+    }
   }
+  if (window.addEventListener) {    // most non-IE browsers and IE9
+    window.addEventListener("resize", setHeaderCanvasDim, false);
+  } else if (window.attachEvent) {  // Internet Explorer 5 or above
+    window.attachEvent("onresize", setHeaderCanvasDim);
+  }
+  setHeaderCanvasDim();
   var ctx = canvas.getContext("2d");
 
   render(0);
