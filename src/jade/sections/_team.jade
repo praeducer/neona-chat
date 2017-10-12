@@ -1,0 +1,22 @@
+- var paul = {name: "Paul Prae", image: "paul-prae.jpg", website: "http://www.paulprae.com", shape: "triangle", title: "Creator, Cloud Architect"}
+- var thomas = {name: "Thomas Bailey", image: "thomas-bailey.jpg", shape: "pentagon", title: "Computational Linguist"}
+- var austin = {name: "Ausin New", image: "austin.jpg", shape: "heptagon", title: "Lead Developer & Engineer"}
+- var dylan = {name: "Dylan Martin", image: "dylan.jpg", shape: "rabbet", title: "Full-Stack Developer"}
+- var david = {name: "David Prae", image: "david.jpg", shape: "x", title: "Front-End Developer"}
+- var team = [paul, thomas, austin, dylan, david]
+
+section#team.team.scrollspy
+    .container
+        .row
+            .col.s12
+                h2 Team
+        .row
+            each teamMember, index in team
+                .col.s12.m6.l3.mrgin-on-medium-and-down
+                    img.responsive-img(class=teamMember.shape+'-clip', src='./assets/images/team/' + teamMember.image, alt=teamMember.name)
+                    if teamMember.website
+                        .name.flow-text
+                            a(href=teamMember.website target='_blank')=teamMember.name
+                    else
+                        .name.flow-text=teamMember.name
+                    .title=teamMember.title

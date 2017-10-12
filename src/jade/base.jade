@@ -32,7 +32,6 @@ html(lang='en')
 
         // Site title
         block title
-            title Neona
 
     block vars
 
@@ -40,26 +39,7 @@ html(lang='en')
         canvas.spiral-buffer(id='spiral-buffer-#{themeName}')
 
         main
-            // Navigation
-            include layout/_nav
-
-            // Intro
-            include sections/_intro
-
-            // Services
-            include sections/_services
-
-            // About
-            include sections/_about
-
-            // FAQ
-            include sections/_faq
-
-            // Contact
-            include sections/_contact
-
-            // Footer
-            include layout/_footer
+            block main
 
         // Libraries
         script(src='./libs/pace/pace.js', data-pace-options='{"eventLag": false}')

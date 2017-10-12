@@ -1,4 +1,4 @@
-extends webchat-base
+extends base
 
 block title
     title Neona
@@ -10,3 +10,7 @@ block vars
 block skin-script
     script(src='./assets/js/spiral-buffer-mark.js')
     script(src='./assets/js/spiral-buffer-header.js')
+
+block main
+    include layout/_simple_nav
+    iframe(width='800', height='800', style="margin:0 auto; display:block" frameborder='no', src='https://webchat.botframework.com/embed/futurisma?s=i-X-jeMNxMQ.cwA.Bwk.Heuwk83mHvUSWAkZakc1uO8xrwM2C5iFkcP-AtJhM4Q')
