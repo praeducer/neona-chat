@@ -16,7 +16,7 @@
                             span.philosophy-number 2
                     li.tab.col.s4.m3.l2
                         a(href='#philosophy-3')
-                            h5 DocumentDB
+                            h5 Cosmos DB
                             span.philosophy-number 3
                     li.tab.col.s4.m3.l2
                         a(href='#philosophy-4')
@@ -31,19 +31,19 @@
                 #philosophy-1.col.s12
                     h5 Azure
                     p.flow-text.
-                        An open, flexible, enterprise-grade cloud computing platform. Neona uses Azure Functions to process events with a serverless code architecture. These functions are responsible for extracting data from Wikipedia, processing it into the desired form, and storing it in DocumentDB.
+                        An open, flexible, enterprise-grade cloud computing platform. Neona uses Azure Functions to process events with a serverless code architecture. These functions are responsible for extracting data from Wikipedia, processing it into the desired form, and storing it in Cosmos DB.
                 #philosophy-2.col.s12
                     h5 Node
                     p.flow-text.
                         An event-driven I/O server-side JavaScript environment. The Azure Functions were written in Node.js. It was used to call the MediaWiki action API, a web service that provides convenient access to wiki features, data, and meta-data over HTTP. Using Node.js’ request module (and JavaScript Promises), the API is called with very carefully constructed queries to return just the data Neona would need.
                 #philosophy-3.col.s12
-                    h5 DocumentDB
+                    h5 Cosmos DB
                     p.flow-text.
                         A distributed database service for managing JSON documents at Internet scale. It is a highly-flexible key-value store that integrates closely with other Microsoft systems. It is Neona's knowledge-base.
                 #philosophy-4.col.s12
                     h5 Azure Search
                     p.flow-text.
-                        A fully managed search-as-a-service in the cloud. It indexes the contents of the knowledge-base and provides an HTTP endpoint Neona can hit to query the knowledge-base. It natively supports DocumentDB.
+                        A fully managed search-as-a-service in the cloud. It indexes the contents of the knowledge-base and provides an HTTP endpoint Neona can hit to query the knowledge-base. It natively supports Cosmos DB.
                 #philosophy-5.col.s12
                     h5 Microsoft Bot Framework
                     p.flow-text.

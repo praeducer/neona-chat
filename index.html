@@ -7,7 +7,7 @@
         <!-- Trying to force IE to perform at its best-->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <!-- Meta description, aim for about 150 characters-->
-        <meta name="description" content="A chat bot that helps you understand the fields of interactive intelligence and cognitive computing.">
+        <meta name="description" content="A chatbot that helps you understand the fields of interactive intelligence and cognitive computing.">
         <!-- Stylesheets-->
         <link rel="stylesheet" href="./libs/pace/themes/white/pace-theme-flash.css">
         <link rel="stylesheet" href="./libs/materialize/css/materialize.min.css?v=master">
@@ -91,8 +91,13 @@
             </div>
             <!-- Intro-->
             <div class="container">
-                <div class="row">
-                    <div class="col s12 l6 offset-l6 flow-text intro">Neona is a chat bot that helps people understand artificial intelligence. People interacting with her will learn about the topics students of AI study.
+                <div class="row intro">
+                    <div class="col s12 m6 flow-text">
+                        <img src="./assets/images/neona/neona-flat.png" srcset="./assets/images/neona/neona-flat@2x.png 2x" class="responsive-img">
+                    </div>
+                    <div class="col s12 m6 flow-text">
+                        <h1>Meet Neona, a chatbot</h1>
+                        <p>Neona is a chatbot that helps people understand artificial intelligence. People interacting with her will learn about the topics students of AI study.</p>
                         <!-- a(href='#contact') Send her a message-->
                         <!-- | &nbsp;if you'd like her creators to create something similar for you.-->
                     </div>
@@ -145,7 +150,7 @@
                                 </li>
                                 <li class="tab col s4 m3 l2">
                                     <a href="#philosophy-3">
-                                        <h5>DocumentDB</h5><span class="philosophy-number">3</span></a>
+                                        <h5>Cosmos DB</h5><span class="philosophy-number">3</span></a>
                                 </li>
                                 <li class="tab col s4 m3 l2">
                                     <a href="#philosophy-4">
@@ -160,19 +165,19 @@
                         <div class="tab-contents">
                             <div id="philosophy-1" class="col s12">
                                 <h5>Azure</h5>
-                                <p class="flow-text">An open, flexible, enterprise-grade cloud computing platform. Neona uses Azure Functions to process events with a serverless code architecture. These functions are responsible for extracting data from Wikipedia, processing it into the desired form, and storing it in DocumentDB.</p>
+                                <p class="flow-text">An open, flexible, enterprise-grade cloud computing platform. Neona uses Azure Functions to process events with a serverless code architecture. These functions are responsible for extracting data from Wikipedia, processing it into the desired form, and storing it in Cosmos DB.</p>
                             </div>
                             <div id="philosophy-2" class="col s12">
                                 <h5>Node</h5>
                                 <p class="flow-text">An event-driven I/O server-side JavaScript environment. The Azure Functions were written in Node.js. It was used to call the MediaWiki action API, a web service that provides convenient access to wiki features, data, and meta-data over HTTP. Using Node.js’ request module (and JavaScript Promises), the API is called with very carefully constructed queries to return just the data Neona would need.</p>
                             </div>
                             <div id="philosophy-3" class="col s12">
-                                <h5>DocumentDB</h5>
+                                <h5>Cosmos DB</h5>
                                 <p class="flow-text">A distributed database service for managing JSON documents at Internet scale. It is a highly-flexible key-value store that integrates closely with other Microsoft systems. It is Neona's knowledge-base.</p>
                             </div>
                             <div id="philosophy-4" class="col s12">
                                 <h5>Azure Search</h5>
-                                <p class="flow-text">A fully managed search-as-a-service in the cloud. It indexes the contents of the knowledge-base and provides an HTTP endpoint Neona can hit to query the knowledge-base. It natively supports DocumentDB.</p>
+                                <p class="flow-text">A fully managed search-as-a-service in the cloud. It indexes the contents of the knowledge-base and provides an HTTP endpoint Neona can hit to query the knowledge-base. It natively supports Cosmos DB.</p>
                             </div>
                             <div id="philosophy-5" class="col s12">
                                 <h5>Microsoft Bot Framework</h5>
