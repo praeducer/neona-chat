@@ -1,10 +1,11 @@
 $(function() {
 
     var config = {
-        bgcolor: "#f590f5",
-        color1: "#74cdcd",
-        color2: "#cad0fc",
-        color3: "#9af2ed",
+        bgcolor: "#6ec7bc",//"#777095",//"#f590f5",
+        color1: "#6ec7bc", //"#9790b5", //"#fbec9b",//"#74cdcd",
+        color2: "#eda8d7",//"#cad0fc",
+        color3: "#eda8d7",//"#cad0fc",
+        //color3: "#644450",//"#6ec7bc",//"#9af2ed",
         fade: 0.98,
         fill: true,
         groupSize: 10,
