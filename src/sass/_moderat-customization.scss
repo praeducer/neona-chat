@@ -2,6 +2,10 @@
 21 Theme Customizations
 
 -----------------------------------------------------------------------------------------*/
+img {
+	max-width: 100%;
+}
+
 .icon {
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -49,5 +53,20 @@
 
 	@media (min-width: 1200px) {
 		height: 700px;
+	}
+}
+
+.tab-contents{
+
+	footer {
+		padding: 0;
+	}
+}
+
+.blog-post-container {
+	margin: 30px 0;
+
+	img {
+		margin-top: 30px;
 	}
 }
