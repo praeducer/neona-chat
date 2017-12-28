@@ -39,3 +39,15 @@
 		width: calc(100% - 65px)
 	}
 }
+
+.chatbot-iframe {
+	height: 424px;
+
+	@media (min-width: 900px) and (orientation: portrait) {
+		height: 700px;
+	}
+
+	@media (min-width: 1200px) {
+		height: 700px;
+	}
+}
