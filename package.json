@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Themeforest theme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "deploy": "sh deploy.sh"
   },
   "keywords": [
     "Themeforest",
@@ -27,11 +29,12 @@
     "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
-    "gulp-sass": "^2.3.2",
+    "gulp-sass": "^4.0.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "gulp-zip": "^3.2.0",
-    "imagemin-pngquant": "^5.0.0"
+    "imagemin-pngquant": "^5.0.0",
+    "node-sass": "4.0.0"
   },
   "dependencies": {}
 }

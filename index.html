@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <!-- Making sure the web-site will scale fine on mobiles-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Trying to force IE to perform at its best-->
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <!-- Meta description, aim for about 150 characters-->
-        <meta name="description" content="A chatbot that helps you understand the fields of interactive intelligence and cognitive computing.">
-        <!-- Stylesheets-->
+        <meta charset="utf-8"><!-- Making sure the web-site will scale fine on mobiles-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Trying to force IE to perform at its best-->
+        <meta http-equiv="x-ua-compatible" content="ie=edge"><!-- Meta description, aim for about 150 characters-->
+        <meta name="description" content="A chatbot that helps you understand the fields of interactive intelligence and cognitive computing."><!-- Stylesheets-->
         <link rel="stylesheet" href="./libs/pace/themes/white/pace-theme-flash.css">
         <link rel="stylesheet" href="./libs/materialize/css/materialize.min.css?v=master">
         <link rel="stylesheet" href="./assets/css/linea.min.css">
         <!--link(rel='stylesheet', href='./assets/css/moderat.min.css?v=5') -- uncomment for prod-->
-        <link rel="stylesheet" href="./assets/css/moderat.css?v=5">
-        <!-- Favicons-->
+        <link rel="stylesheet" href="./assets/css/moderat.css?v=5"><!-- Favicons-->
         <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
@@ -22,12 +17,10 @@
         <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg">
         <link rel="shortcut icon" href="favicon.ico">
         <meta name="msapplication-config" content="./favicons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        <!-- Site title-->
+        <meta name="theme-color" content="#ffffff"><!-- Site title-->
         <title>Neona</title>
     </head>
-    <body class="mark dark">
-        <canvas id="spiral-buffer-mark" class="spiral-buffer"></canvas>
+    <body class="mark dark"><canvas id="spiral-buffer-mark" class="spiral-buffer"></canvas>
         <main>
             <!-- Navigation-->
             <div class="navbar-fixed">
@@ -36,74 +29,42 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col s12 l6">
-                                    <!-- Brand or logo-->
-                                    <a href="#!" class="brand">Neona</a>
-                                    <!-- Menu button visible on tablet and mobile--><span class="right show-on-medium-and-down hide-on-large-only"><a id="sidenav-toggle" href="#" data-activates="slide-out" class="sidenav-toggle">Menu</a></span></div>
+                                    <!-- Brand or logo--><a href="#!" class="brand">Neona</a><!-- Menu button visible on tablet and mobile--><span class="right show-on-medium-and-down hide-on-large-only"><a id="sidenav-toggle" href="#" data-activates="slide-out" class="sidenav-toggle">Menu</a></span>
+                                </div>
                                 <div class="col s12 l6">
                                     <!-- Desktop menu version-->
                                     <ul class="hidden hide-on-med-and-down table-of-contents">
-                                        <li>
-                                            <a href="#services">Channels</a>
-                                        </li>
-                                        <li>
-                                            <a href="#technology">Technology</a>
-                                        </li>
-                                        <li>
-                                            <a href="#ai">AI Concepts</a>
-                                        </li>
-                                        <li>
-                                            <a href="#team">Team</a>
-                                        </li>
-                                        <li>
-                                            <a href="#faq">FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#contact">Contact</a>
-                                        </li>
-                                    </ul>
-                                    <!-- Tablet and mobile menu-->
+                                        <li><a href="#services">Channels</a></li>
+                                        <li><a href="#technology">Technology</a></li>
+                                        <li><a href="#ai">AI Concepts</a></li>
+                                        <li><a href="#team">Team</a></li>
+                                        <li><a href="#faq">FAQ</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                    </ul><!-- Tablet and mobile menu-->
                                     <ul id="slide-out" class="side-nav">
-                                        <li>
-                                            <a href="#services">Channels</a>
-                                        </li>
-                                        <li>
-                                            <a href="#technology">Technology</a>
-                                        </li>
-                                        <li>
-                                            <a href="#ai">AI Concepts</a>
-                                        </li>
-                                        <li>
-                                            <a href="#team">Team</a>
-                                        </li>
-                                        <li>
-                                            <a href="#faq">FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#contact">Contact</a>
-                                        </li>
+                                        <li><a href="#services">Channels</a></li>
+                                        <li><a href="#technology">Technology</a></li>
+                                        <li><a href="#ai">AI Concepts</a></li>
+                                        <li><a href="#team">Team</a></li>
+                                        <li><a href="#faq">FAQ</a></li>
+                                        <li><a href="#contact">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </nav>
-                <canvas id="spiral-buffer-header" class="spiral-buffer-header"></canvas>
-            </div>
-            <!-- Intro-->
+                </nav><canvas id="spiral-buffer-header" class="spiral-buffer-header"></canvas>
+            </div><!-- Intro-->
             <div class="container">
                 <div class="row intro">
-                    <div class="col s12 m6 flow-text">
-                        <img src="./assets/images/neona/neona-flat.png" srcset="./assets/images/neona/neona-flat@2x.png 2x" class="responsive-img">
-                    </div>
+                    <div class="col s12 m6 flow-text"><img src="./assets/images/neona/neona-flat.png" srcset="./assets/images/neona/neona-flat@2x.png 2x" class="responsive-img"></div>
                     <div class="col s12 m6 flow-text">
                         <h1>Meet Neona, a chatbot for learning AI</h1>
-                        <p>By interacting with her, you can explore concepts from across the field of artificial intelligence. By studying her design and architecture, you can learn how to build conversational agents.</p>
-                        <!-- a(href='#contact') Send her a message-->
+                        <p>By interacting with her, you can explore concepts from across the field of artificial intelligence. By studying her design and architecture, you can learn how to build conversational agents. </p><!-- a(href='#contact') Send her a message-->
                         <!-- | &nbsp;if you'd like her creators to create something similar for you.-->
                     </div>
                 </div>
-            </div>
-            <!-- Services-->
+            </div><!-- Services-->
 
             <section id="services" class="services scrollspy">
                 <div class="container">
@@ -115,20 +76,23 @@
                     <div class="service-items">
                         <div class="row">
                             <div class="col s12 l6 margin-on-medium-and-down">
-                                <div class="icon-skype icon"></div><span class="flow-text">Skype —<a href="https://join.skype.com/bot/cf47b4bb-0644-406b-98dc-2e6661a0c3b3?add" target="_blank">demo available now!</a></span></div>
+                                <div class="icon-skype icon"></div><span class="flow-text">Skype —<a href="https://join.skype.com/bot/cf47b4bb-0644-406b-98dc-2e6661a0c3b3?add" target="_blank">demo available now!</a></span>
+                            </div>
                             <div class="col s12 l6">
-                                <div class="icon-facebook icon"></div><span class="flow-text">Facebook Messenger —<a href="https://www.facebook.com/neonabot/" target="_blank">demo available now!</a></span></div>
+                                <div class="icon-facebook icon"></div><span class="flow-text">Facebook Messenger —<a href="https://www.facebook.com/neonabot/" target="_blank">demo available now!</a></span>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col s12 l6 margin-on-medium-and-down">
-                                <div class="icon-slack icon"></div><span class="flow-text">Slack — coming soon.</span></div>
+                                <div class="icon-slack icon"></div><span class="flow-text">Slack — coming soon.</span>
+                            </div>
                             <div class="col s12 l6">
-                                <div class="icon-web icon"></div><span class="flow-text">Web —<a href="webchat.html" target="_blank">demo available now!</a></span></div>
+                                <div class="icon-web icon"></div><span class="flow-text">Web —<a href="webchat.html" target="_blank">demo available now!</a></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- About-->
+            </section><!-- About-->
             <div id="about" class="container about">
 
                 <section id="technology" class="philosophy scrollspy">
@@ -140,26 +104,21 @@
                     <div class="row philosophy big-icons-row">
                         <div class="col s12">
                             <ul class="tabs">
-                                <li class="tab col s4 m3 l2">
-                                    <a href="#philosophy-1">
-                                        <h5>Azure</h5><span class="philosophy-number">1</span></a>
-                                </li>
-                                <li class="tab col s4 m3 l2">
-                                    <a href="#philosophy-2">
-                                        <h5>Node.js</h5><span class="philosophy-number">2</span></a>
-                                </li>
-                                <li class="tab col s4 m3 l2">
-                                    <a href="#philosophy-3">
-                                        <h5>Cosmos DB</h5><span class="philosophy-number">3</span></a>
-                                </li>
-                                <li class="tab col s4 m3 l2">
-                                    <a href="#philosophy-4">
-                                        <h5>Azure Search</h5><span class="philosophy-number">4</span></a>
-                                </li>
-                                <li class="tab col s4 m3 l2">
-                                    <a href="#philosophy-5">
-                                        <h5>Bot Framework</h5><span class="philosophy-number">5</span></a>
-                                </li>
+                                <li class="tab col s4 m3 l2"><a href="#philosophy-1">
+                                        <h5>Azure</h5><span class="philosophy-number">1</span>
+                                    </a></li>
+                                <li class="tab col s4 m3 l2"><a href="#philosophy-2">
+                                        <h5>Node.js</h5><span class="philosophy-number">2</span>
+                                    </a></li>
+                                <li class="tab col s4 m3 l2"><a href="#philosophy-3">
+                                        <h5>Cosmos DB</h5><span class="philosophy-number">3</span>
+                                    </a></li>
+                                <li class="tab col s4 m3 l2"><a href="#philosophy-4">
+                                        <h5>Azure Search</h5><span class="philosophy-number">4</span>
+                                    </a></li>
+                                <li class="tab col s4 m3 l2"><a href="#philosophy-5">
+                                        <h5>Bot Framework</h5><span class="philosophy-number">5</span>
+                                    </a></li>
                             </ul>
                         </div>
                         <div class="tab-contents">
@@ -197,18 +156,15 @@
                     <div class="row philosophy big-icons-row">
                         <div class="col s12">
                             <ul class="tabs">
-                                <li class="tab col s4 m3 l2">
-                                    <a href="#AI-concept-1">
-                                        <h5>Semantic Network</h5><span class="philosophy-number">1</span></a>
-                                </li>
-                                <li class="tab col s4 m3 l2">
-                                    <a href="#AI-concept-2">
-                                        <h5>Classification</h5><span class="philosophy-number">2</span></a>
-                                </li>
-                                <li class="tab col s4 m3 l2">
-                                    <a href="#AI-concept-3">
-                                        <h5>Case-based Reasoning</h5><span class="philosophy-number">3</span></a>
-                                </li>
+                                <li class="tab col s4 m3 l2"><a href="#AI-concept-1">
+                                        <h5>Semantic Network</h5><span class="philosophy-number">1</span>
+                                    </a></li>
+                                <li class="tab col s4 m3 l2"><a href="#AI-concept-2">
+                                        <h5>Classification</h5><span class="philosophy-number">2</span>
+                                    </a></li>
+                                <li class="tab col s4 m3 l2"><a href="#AI-concept-3">
+                                        <h5>Case-based Reasoning</h5><span class="philosophy-number">3</span>
+                                    </a></li>
                             </ul>
                         </div>
                         <div class="tab-contents">
@@ -227,8 +183,7 @@
                         </div>
                     </div>
                 </section>
-            </div>
-            <!-- News-->
+            </div><!-- News-->
             <div id="about" class="container about">
 
                 <section id="technology" class="philosophy scrollspy">
@@ -240,23 +195,19 @@
                     <div class="row philosophy big-icons-row">
                         <div class="col s12">
                             <ul class="tabs">
-                                <li class="tab col s4 m3 l2">
-                                    <a href="#blog-posts">
-                                        <h5>Blog Posts</h5><span class="philosophy-number">1</span></a>
-                                </li>
-                                <li class="tab col s4 m3 l2">
-                                    <a href="#resources">
-                                        <h5>Presentations</h5><span class="philosophy-number">2</span></a>
-                                </li>
+                                <li class="tab col s4 m3 l2"><a href="#blog-posts">
+                                        <h5>Blog Posts</h5><span class="philosophy-number">1</span>
+                                    </a></li>
+                                <li class="tab col s4 m3 l2"><a href="#resources">
+                                        <h5>Presentations</h5><span class="philosophy-number">2</span>
+                                    </a></li>
                             </ul>
                         </div>
                         <div class="tab-contents dark">
                             <div id="blog-posts" class="col s12">
                                 <h5>Blog Posts</h5>
                                 <article class="blog-post-container">
-                                    <h6>
-                                        <a href="http://blog.paulprae.com/conversational-ui-best-practices/">Conversational UI Best Practices</a>
-                                    </h6>
+                                    <h6> <a href="http://blog.paulprae.com/conversational-ui-best-practices/">Conversational UI Best Practices</a></h6>
 
                                     <footer>
                                         <p>Date: 19 October 2017</p>
@@ -264,9 +215,7 @@
                                     </footer>
                                 </article>
                                 <article class="blog-post-container">
-                                    <h6>
-                                        <a href="http://blog.paulprae.com/neona-a-conversational-agent-that-teaches-ai-2/">Neona: A Conversational Agent That Teaches AI</a>
-                                    </h6>
+                                    <h6> <a href="http://blog.paulprae.com/neona-a-conversational-agent-that-teaches-ai-2/">Neona: A Conversational Agent That Teaches AI</a></h6>
 
                                     <footer>
                                         <p>Date: 15 January 2017</p>
@@ -279,10 +228,7 @@
                                 <article class="blog-post-container">
                                     <div class="row">
                                         <div class="col s12 m6 offset-m6">
-                                            <h6>
-                                                <a href="https://www.slideshare.net/PaulPrae/azure-as-a-chatbot-service-from-purpose-to-production-with-a-cloud-bot-architecture?ref=https://www.slideshare.net/PaulPrae/slideshelf">Azure as a Chatbot Service: From Purpose To Production With A Cloud Bot Architecture</a>
-                                                <img src="./assets/images/presentations/cloud-bot-architecture-branded.PNG" alt="screenshot of architecture slide">
-                                            </h6>
+                                            <h6> <a href="https://www.slideshare.net/PaulPrae/azure-as-a-chatbot-service-from-purpose-to-production-with-a-cloud-bot-architecture?ref=https://www.slideshare.net/PaulPrae/slideshelf">Azure as a Chatbot Service: From Purpose To Production With A Cloud Bot Architecture</a><img src="./assets/images/presentations/cloud-bot-architecture-branded.PNG" alt="screenshot of architecture slide"></h6>
                                         </div>
                                     </div>
                                 </article>
@@ -290,8 +236,7 @@
                         </div>
                     </div>
                 </section>
-            </div>
-            <!-- Team-->
+            </div><!-- Team-->
 
             <section id="team" class="team scrollspy">
                 <div class="container">
@@ -301,37 +246,33 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s12 m6 l3 mrgin-on-medium-and-down">
-                            <img src="./assets/images/team/paul-prae.jpg" alt="Paul Prae" class="responsive-img triangle-clip">
-                            <div class="name flow-text">
-                                <a href="http://www.paulprae.com" target="_blank">Paul Prae</a>
-                            </div>
+                        <div class="col s12 m6 l3 mrgin-on-medium-and-down"><img src="./assets/images/team/paul-prae.jpg" alt="Paul Prae" class="responsive-img triangle-clip">
+                            <div class="name flow-text"><a href="http://www.paulprae.com" target="_blank">Paul Prae</a></div>
                             <div class="title">Creator, Cloud Architect</div>
                         </div>
-                        <div class="col s12 m6 l3 mrgin-on-medium-and-down">
-                            <img src="./assets/images/team/thomas-bailey.jpg" alt="Thomas Bailey" class="responsive-img pentagon-clip">
+                        <div class="col s12 m6 l3 mrgin-on-medium-and-down"><img src="./assets/images/team/thomas-bailey.jpg" alt="Thomas Bailey" class="responsive-img pentagon-clip">
                             <div class="name flow-text">Thomas Bailey</div>
                             <div class="title">Computational Linguist</div>
                         </div>
-                        <div class="col s12 m6 l3 mrgin-on-medium-and-down">
-                            <img src="./assets/images/team/austin.jpg" alt="Austin New" class="responsive-img heptagon-clip">
+                        <div class="col s12 m6 l3 mrgin-on-medium-and-down"><img src="./assets/images/team/austin.jpg" alt="Austin New" class="responsive-img heptagon-clip">
                             <div class="name flow-text">Austin New</div>
                             <div class="title">Lead Developer, Engineer</div>
                         </div>
-                        <div class="col s12 m6 l3 mrgin-on-medium-and-down">
-                            <img src="./assets/images/team/dylan.jpg" alt="Dylan Martin" class="responsive-img rabbet-clip">
+                        <div class="col s12 m6 l3 mrgin-on-medium-and-down"><img src="./assets/images/team/dylan.jpg" alt="Dylan Martin" class="responsive-img rabbet-clip">
                             <div class="name flow-text">Dylan Martin</div>
                             <div class="title">Full-Stack Developer</div>
                         </div>
-                        <div class="col s12 m6 l3 mrgin-on-medium-and-down">
-                            <img src="./assets/images/team/david.jpg" alt="David Prae" class="responsive-img x-clip">
+                        <div class="col s12 m6 l3 mrgin-on-medium-and-down"><img src="./assets/images/team/david.jpg" alt="David Prae" class="responsive-img x-clip">
                             <div class="name flow-text">David Prae</div>
                             <div class="title">Front-End Developer</div>
                         </div>
+                        <div class="col s12 m6 l3 mrgin-on-medium-and-down"><img src="./assets/images/team/ian.jpg" alt="Ian Edwards" class="responsive-img heptagon-clip">
+                            <div class="name flow-text">Ian Edwards</div>
+                            <div class="title">Full-Stack Developer</div>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <!-- FAQ-->
+            </section><!-- FAQ-->
             <div id="faq" class="container scrollspy">
 
                 <section class="faq">
@@ -353,8 +294,7 @@
                         </div>
                     </div>
                 </section>
-            </div>
-            <!-- Contact-->
+            </div><!-- Contact-->
             <div id="contact" class="container scrollspy">
 
                 <section class="contact">
@@ -366,38 +306,24 @@
                     <form id="mail-form" action="mailer/mailer.php" novalidate autocomplete="off">
                         <div class="row">
                             <div class="col s12 l6">
-                                <div class="input-field">
-                                    <input id="name" type="text" name="name">
-                                    <label for="name">Name</label>
-                                </div>
+                                <div class="input-field"><input id="name" type="text" name="name"><label for="name">Name</label></div>
                             </div>
                             <div class="col s12 l6">
-                                <div class="input-field">
-                                    <input id="email" type="email" name="email">
-                                    <label for="email">Email</label>
-                                </div>
+                                <div class="input-field"><input id="email" type="email" name="email"><label for="email">Email</label></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col s12">
-                                <div class="input-field">
-                                    <textarea id="message" name="message" class="materialize-textarea"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
+                                <div class="input-field"><textarea id="message" name="message" class="materialize-textarea"></textarea><label for="message">Message</label></div>
                             </div>
                         </div>
                         <div style="display:none" class="row">
                             <div class="col s12">
-                                <div class="input-field">
-                                    <textarea id="hpfield" name="hpfield" class="materialize-textarea"></textarea>
-                                    <label for="hpfield">hpfield</label>
-                                </div>
+                                <div class="input-field"><textarea id="hpfield" name="hpfield" class="materialize-textarea"></textarea><label for="hpfield">hpfield</label></div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col s12">
-                                <button id="send-message" type="submit" class="btn btn-large btn-flat waves-effect waves-dark white black-text">Send</button>
-                            </div>
+                            <div class="col s12"><button id="send-message" type="submit" class="btn btn-large btn-flat waves-effect waves-dark white black-text">Send</button></div>
                         </div>
                     </form>
                 </section>
@@ -408,20 +334,14 @@
                             <h2>Contact Us</h2>
                         </div>
                         <div class="col s12 l6 flow-text">
-                            <p>
-                                <a href="mailto:neona.chat@outlook.com">neona.chat@outlook.com</a>
-                                <br>
-                            </p>
+                            <p><a href="mailto:neona.chat@outlook.com">neona.chat@outlook.com</a><br></p>
                         </div>
                         <div class="col s12 l3 flow-text">
-                            <address>Atlanta, GA
-                                <br>
-                            </address>
+                            <address>Atlanta, GA<br></address>
                         </div>
                     </div>
                 </section>
-            </div>
-            <!-- Footer-->
+            </div><!-- Footer-->
 
             <footer>
                 <div class="container">
@@ -430,13 +350,11 @@
                     </div>
                 </div>
             </footer>
-        </main>
-        <!-- Libraries-->
+        </main><!-- Libraries-->
         <script src="./libs/pace/pace.js" data-pace-options="{&quot;eventLag&quot;: false}"></script>
         <script src="./libs/jquery/jquery.min.js"></script>
         <script src="./libs/lodash/lodash.min.js"></script>
-        <script src="./libs/materialize/js/materialize.min.js?v=master"></script>
-        <!-- Oona scripts-->
+        <script src="./libs/materialize/js/materialize.min.js?v=master"></script><!-- Oona scripts-->
         <script src="./assets/js/spiral-buffer-mark.js"></script>
         <script src="./assets/js/spiral-buffer-header.js"></script>
         <script src="./assets/js/config.js"></script>
