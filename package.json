@@ -5,7 +5,7 @@
   "scripts": {
     "gulp": "gulp",
     "gulp:once": "gulp once",
-    "build:azure": "gulp:once",
+    "build:azure": "gulp once",
     "deploy": "sh deploy.sh"
   },
   "keywords": [
