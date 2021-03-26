@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
+    "build:azure": "npm run gulp",
     "deploy": "sh deploy.sh"
   },
   "keywords": [
